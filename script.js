@@ -5,8 +5,10 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
     let email = document.getElementById("email").value;
     let moradia = document.getElementById("moradia").value;
     let quintal = document.querySelector('input[name="quintal]:checked').value;
+    let animal = document.querySelector('input[name="animal]:checked').value;
 
-    if(nome.lenght < 3) return alert ("Nome Inválido");
+    if (nome.lenght < 3) return alert("Nome Inválido");
+    if (telefone.lenght < 8) return alert("Número Inválido");
 
     document.getElementById("resultado").innerHTML= "Cadastrado realizado com sucesso!<br>" + "Nome:" +
     nome;
