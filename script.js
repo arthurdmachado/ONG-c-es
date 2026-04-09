@@ -20,7 +20,7 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
 
     if (nome.length < 3) return alert("Nome inválido!");
 
-    console.log("Idade:", idade); if (isNaN(idade) || idade < 18) return alert("Idade inadequada!");
+    if (isNaN(idade) || idade < 18) return alert("Idade inadequada!");
 
     if (telefone.length < 8) return alert("Telefone inválido!");
 
