@@ -20,17 +20,17 @@ document.getElementById("formAdocao").addEventListener("submit", function (e) {
 
     if (nome.length < 3) return alert("Nome inválido!");
 
-    if (isNaN(idade) || idade < 18) return alert("Idade inadequada!");
+    console.log("Idade:", idade); if (isNaN(idade) || idade < 18) return alert("Idade inadequada!");
 
     if (telefone.length < 8) return alert("Telefone inválido!");
 
-    if (!moradia) return alert("Selecione a moradia!");
+    if (moradia) return alert("Selecione a moradia!");
 
-    if (!quintal) return alert("Informe se possui quintal!");
+    if (quintal) return alert("Informe se possui quintal!");
 
-    if (!animal) return alert("Informe se já teve animal!");
+    if (animal) return alert("Informe se já teve animal!");
 
-    if (!financeiro) return alert("Informe sua condição financeira!");
+    if (financeiro) return alert("Informe sua condição financeira!");
 
     if (tempo > 8) return alert("O animal ficará tempo demais sozinho!");
 
